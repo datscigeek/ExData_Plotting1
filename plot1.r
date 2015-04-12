@@ -17,6 +17,6 @@ power_cons <- read.csv('power_cons.csv')
 
 png(filename='plot1.png', width=480, height=480, units='px')
 
-hist(power_cons$Global_active_power, main='Global Active Power', xlab='Global Active Power (kilowatts', col='red')
+hist(power_cons$Global_active_power, main='Global Active Power', col = "red", breaks = 11, xlab = "Global Active Power (kilowatts)")
 
-dev.off()
+dev.off() 

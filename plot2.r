@@ -17,7 +17,6 @@ power_cons <- read.csv('power_cons.csv')
 
 png(filename='plot2.png', width=480, height=480, units='px')
 
-plot(power_cons$date.time, power_cons$Global_active_power, ylab='Global Active Power (kilowatts)', xlab='', type='l')
+plot(power_cons$date.time, power_cons$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
-dev.off()
-
+dev.off() 
